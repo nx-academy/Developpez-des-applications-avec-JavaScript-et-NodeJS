@@ -1,9 +1,9 @@
-const readline = require('readline');
+const readline = require('readline')
 
 const inquierer = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+  input: process.stdin,
+  output: process.stdout
+})
 
 function generateRandomNumber() {
   const maxNumber = 10
@@ -11,26 +11,31 @@ function generateRandomNumber() {
 }
 
 const randomNumber = generateRandomNumber()
+let numberOfAttempts = 0
 
 console.log("====")
 console.log(randomNumber)
 console.log("====")
 
 function main() {
-  inquierer.question("Pick a number between 1 and 10: ", function (input) {
+  numberOfAttempts++
+
+  inquierer.question("Pick a number between 1 and 10: ", function(input) {
     if (Number(input) === randomNumber) {
       console.log("Well done")
+      console.log(`Your number of attempts was ${numberOfAttempts}`)
+      process.exit()
     } else if (Number(input) > randomNumber) {
-      console.log("Too hight")
+      console.log("Too high")
     } else if (Number(input) < randomNumber) {
       console.log("Too low")
     } else {
-      console.log("Something went wrong")
+      console.log("Invalid Input")
     }
 
-    main(); //Calling this function again to ask new question
-  });
-};
+    main() //Calling this function again to continue the game
+  })
+}
 
 main()
 
