@@ -13,10 +13,6 @@ function generateRandomNumber() {
 const randomNumber = generateRandomNumber()
 let numberOfAttempts = 0
 
-console.log("====")
-console.log(randomNumber)
-console.log("====")
-
 function main() {
   numberOfAttempts++
 
