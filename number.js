@@ -1,6 +1,5 @@
 // J'initialise une valeur
 let numberOfPeople = 60
-
 console.log("L'état initial de numberOfPeople est", numberOfPeople)
 
 // Je l'aditionne (incrémente) de 20
