@@ -26,7 +26,7 @@ if (isAvailable) {
 }
 
 
-// Notre troisie1me condition
+// Notre troisième condition
 const canBeBuy = true
 const isPreOrderable = true
 
