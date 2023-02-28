@@ -20,18 +20,9 @@ function main() {
     console.log(`la solution est ${randomNumber}`)
 
     // la constante guessNumber qui va vous servir à valider vos conditions
-    const guessNumber = "thomas"
+    const guessNumber = 1
 
     // Ajouter ici vos conditions
-    if (guessNumber < randomNumber) {
-        console.log("Too low")
-    } else if (guessNumber > randomNumber) {
-        console.log("Too high")
-    } else if (guessNumber === randomNumber) {
-        console.log("Well done")
-    } else {
-        console.log("Invalid input")
-    }
 
 
     let numberOfAttempts = 2
