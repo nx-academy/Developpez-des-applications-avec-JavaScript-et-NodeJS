@@ -1,6 +1,8 @@
 const maximumNumberOfTries = 10
 console.log(`le nombre maximum d'essais est de ${maximumNumberOfTries}`)
 
+const guessNumber = 1
+
 
 function displayNumberOfAttempts(numberOfAttempts) {
     console.log(`le nombre de tentatives réalisées est de ${numberOfAttempts}`)
