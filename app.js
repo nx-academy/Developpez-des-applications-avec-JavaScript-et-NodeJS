@@ -8,7 +8,7 @@ function displayNumberOfAttempts(numberOfAttempts) {
 
 
 function generateRandomNumber() {
-    const randomNumber = 6
+    const randomNumber = Math.floor(Math.random() * 10) + 1
     return randomNumber
 }
 
