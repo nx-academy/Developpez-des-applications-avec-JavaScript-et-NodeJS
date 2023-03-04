@@ -1,10 +1,10 @@
 // // J'initialise une constante contenant la valeur de PI
-// const pi = Math.PI
-// console.log(`La valeur de PI est ${pi}`)
+const pi = Math.PI
+console.log(`La valeur de PI est ${pi}`)
 
 // // J'initialise une constante contenant la valeur de racine carrée de 2
-// const squareRootOfTwo = Math.SQRT2
-// console.log(`La valeur de la racine carrée de 2 est ${squareRootOfTwo}`)
+const squareRootOfTwo = Math.SQRT2
+console.log(`La valeur de la racine carrée de 2 est ${squareRootOfTwo}`)
 
 // Je génère un nombre compris entre 0 et 1
 const randomNumber = Math.random()
