@@ -2,7 +2,7 @@
 
 Bienvenue sur le code source du projet fil rouge **Guess the Number**. Ce projet a été réalisé en lien avec le cours **Initiez-vous à la programmation avec JavaScript et NodeJS** sur Next Level.
 
-Ce cours ainsi que son projet fil rouge ont été écrits, développés et testés sur Mac et Windows.
+Ce cours ainsi que son projet fil rouge ont été écrits, développés et testés sur Mac et Windows. Ce projet est **open source**. Si vous avez une question, que vous avez trouvé une faute d'orthographe ou que quelque chose ne vous semble pas clair, nous vous invitons à ouvrir une [issue]().
 
 ## Prérequis
 
@@ -34,5 +34,7 @@ https://github.com/tdimnet/guess-the-number.git
 
 ## Informations complémentaires:
 
-Ce projet est open source. Si vous avez une question, que vous avez trouvé une faute d'orthographe ou que quelque chose ne vous semble pas clair, nous vous invitons à ouvrir une issue.
-
+À partir de la partie 2, chaque chapitre comporte entre deux et trois branches :
+- `partie-2/chapitre-2-debut` - correspond à la branche du début de chaque chapitre
+- `partie-2/chapitre-2-exercice` - (**optionnel**) correspond à la branche d'activité
+- `partie-2/chapitre-2-fin` - correspond à la branche de fin de chapitre.
