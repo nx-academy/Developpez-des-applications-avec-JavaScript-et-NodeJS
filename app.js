@@ -5,12 +5,9 @@ const inquierer = readline.createInterface({
     output: process.stdout
 })
 
-const maximumNumberOfTries = 10
-// console.log(`le nombre maximum d'essais est de ${maximumNumberOfTries}`)
-
 
 function displayNumberOfAttempts(numberOfAttempts) {
-    // console.log(`le nombre de tentatives réalisées est de ${numberOfAttempts}`)
+    console.log(`\nVous êtes actuellement à ${numberOfAttempts} tentatives\n`)
 }
 
 
@@ -19,34 +16,51 @@ function generateRandomNumber() {
     return randomNumber
 }
 
+const maximumNumberOfTries = 10
 
-function main() {
-    console.log("Bienvenue au jeu de devinette des nombres !")
+const randomNumber = generateRandomNumber()
+console.log(`la solution est ${randomNumber}`) // N'hésitez pas à commenter cette ligne
 
-    const randomNumber = generateRandomNumber()
-    console.log(`la solution est ${randomNumber}`)
+let numberOfAttempts = 0
+
+console.log("Bienvenue au jeu de devinette des nombres !\n")
+
+function main() {    
+    displayNumberOfAttempts(numberOfAttempts)
 
     inquierer.question("Veuillez choisir un nombre entre 1 et 10 : ", (answer) => {
-        console.log(`vous avez choisi le nombre ${answer}`)
+        console.log(`\nvous avez choisi le nombre ${answer}`)
         const guessNumber = Number(answer)
 
-        // Ajouter ici vos conditions
-        if (guessNumber < randomNumber) {
-            console.log("Too low")
-        } else if (guessNumber > randomNumber) {
-            console.log("Too high")
-        } else if (guessNumber === randomNumber) {
-            console.log("Well done")
+        numberOfAttempts++
+
+        if (numberOfAttempts === maximumNumberOfTries) {
+            console.log(`
+            
+            Vous avez perdu ! Vous avez réalisé le nombre maximum d'essais. Le nombre était ${randomNumber}
+            
+            `)
+            process.exit()
         } else {
-            console.log("Invalid input")
+             // Ajouter ici vos conditions
+            if (guessNumber < randomNumber) {
+                console.log("Votre proposition est trop basse")
+            } else if (guessNumber > randomNumber) {
+                console.log("Votre proposition est trop élévée")
+            } else if (guessNumber === randomNumber) {
+                console.log(`
+                
+                Bien joué ! Le nombre était bien ${randomNumber}. Vous avez utilisé ${numberOfAttempts} tentatives.
+
+                `)
+                process.exit()
+            } else {
+                console.log("Cette proposition n'est pas valide")
+            }
         }
+
+        main()
     })
-
-    
-
-
-    // let numberOfAttempts = 2
-    // displayNumberOfAttempts(numberOfAttempts)
 }
 
 main()
