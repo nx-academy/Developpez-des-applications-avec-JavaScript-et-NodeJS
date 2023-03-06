@@ -32,34 +32,16 @@ function main() {
         console.log(`\nvous avez choisi le nombre ${answer}`)
         const guessNumber = Number(answer)
 
-        numberOfAttempts++
-
-        if (numberOfAttempts === maximumNumberOfTries) {
-            console.log(`
-            
-            Vous avez perdu ! Vous avez réalisé le nombre maximum d'essais. Le nombre était ${randomNumber}
-            
-            `)
+        if (guessNumber < randomNumber) {
+            console.log("Votre proposition est trop basse")
+        } else if (guessNumber > randomNumber) {
+            console.log("Votre proposition est trop élévée")
+        } else if (guessNumber === randomNumber) {
+            console.log("Bien joué !")
             process.exit()
         } else {
-             // Ajouter ici vos conditions
-            if (guessNumber < randomNumber) {
-                console.log("Votre proposition est trop basse")
-            } else if (guessNumber > randomNumber) {
-                console.log("Votre proposition est trop élévée")
-            } else if (guessNumber === randomNumber) {
-                console.log(`
-                
-                Bien joué ! Le nombre était bien ${randomNumber}. Vous avez utilisé ${numberOfAttempts} tentatives.
-
-                `)
-                process.exit()
-            } else {
-                console.log("Cette proposition n'est pas valide")
-            }
+            console.log("Cette proposition n'est pas valide")
         }
-
-        main()
     })
 }
 
