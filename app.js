@@ -25,6 +25,7 @@ let numberOfAttempts = 0
 
 console.log("Bienvenue au jeu de devinette des nombres !\n")
 
+
 function main() {    
     displayNumberOfAttempts(numberOfAttempts)
 
