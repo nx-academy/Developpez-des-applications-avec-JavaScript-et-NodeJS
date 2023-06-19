@@ -1,6 +1,6 @@
 # Guess the Number
 
-Bienvenue sur le code source du projet fil rouge **Guess the Number**. Ce projet a été réalisé en lien avec le cours **Initiez-vous à la programmation avec JavaScript et NodeJS** sur Next Level.
+Bienvenue sur le code source du projet fil rouge **Guess the Number**. Ce projet a été réalisé en lien avec le cours **Développez des applications avec JavaScript et NodeJS** sur [NX](https://nx.academy).
 
 Ce cours ainsi que son projet fil rouge ont été écrits, développés et testés sur Mac et Windows. Ce projet est **open source**. Si vous avez une question, que vous avez trouvé une faute d'orthographe ou que quelque chose ne vous semble pas clair, nous vous invitons à ouvrir une [issue]().
 
