@@ -1,4 +1,4 @@
-# Guess the Number
+# Développez des applications avec JavaScript et NodeJS
 
 Bienvenue sur le code source du projet fil rouge **Guess the Number**. Ce projet a été réalisé en lien avec le cours **Développez des applications avec JavaScript et NodeJS** sur [NX](https://nx.academy).
 
@@ -24,12 +24,12 @@ Pour récupérer ce projet, vous pouvez simplement réaliser un `git clone` :
 
 - Via SSH
 ```
-git@github.com:tdimnet/guess-the-number.git
+git@github.com:nx-academy/Developpez-des-applications-avec-JavaScript-et-NodeJS.git
 ```
 
 - Via HTTPS
 ```
-https://github.com/tdimnet/guess-the-number.git
+https://github.com/nx-academy/Developpez-des-applications-avec-JavaScript-et-NodeJS.git
 ```
 
 ## Informations complémentaires:
